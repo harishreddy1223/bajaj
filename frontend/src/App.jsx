@@ -25,7 +25,7 @@ function App() {
         throw new Error("Invalid input format: 'data' should be an array");
       }
 
-      const res = await axios.post("http://localhost:5000/bfhl", parsedInput);
+      const res = await axios.post("https://bajaj-backend-gv2u.onrender.com/bfhl", parsedInput);
       setResponseData(res.data);
     } catch (err) {
       setError("Invalid JSON input or API request failed");
